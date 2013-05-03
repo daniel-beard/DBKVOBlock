@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DBKVOBlock.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) DBKVOBlock *blockManager;
 
 @end
 
@@ -18,6 +21,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.blockManager = [[DBKVOBlock alloc] init];
+    
+    [self.blockManager observeObject:self.textField withKeyPath:@"text" withAction:^{
+        NSLog(@"self.textField.text: %@", self.textField.text);
+    }];
+    
+    self.textField.text = @"Test";
+    
 }
 
 - (void)didReceiveMemoryWarning

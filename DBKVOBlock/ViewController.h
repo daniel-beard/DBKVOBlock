@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBKVOBlock.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

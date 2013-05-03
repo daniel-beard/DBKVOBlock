@@ -19,6 +19,7 @@
 		6BE2CB0C17336188003B567B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE2CB0A17336188003B567B /* MainStoryboard_iPhone.storyboard */; };
 		6BE2CB0F17336188003B567B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE2CB0D17336188003B567B /* MainStoryboard_iPad.storyboard */; };
 		6BE2CB1217336188003B567B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE2CB1117336188003B567B /* ViewController.m */; };
+		6BE2CB1B173361AE003B567B /* DBKVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE2CB1A173361AE003B567B /* DBKVOBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		6BE2CB0E17336188003B567B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6BE2CB1017336188003B567B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6BE2CB1117336188003B567B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BE2CB19173361AE003B567B /* DBKVOBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOBlock.h; sourceTree = "<group>"; };
+		6BE2CB1A173361AE003B567B /* DBKVOBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		6BE2CAF817336187003B567B /* DBKVOBlock */ = {
 			isa = PBXGroup;
 			children = (
+				6BE2CB1817336198003B567B /* DBKVOBlock */,
 				6BE2CB0117336188003B567B /* AppDelegate.h */,
 				6BE2CB0217336188003B567B /* AppDelegate.m */,
 				6BE2CB0A17336188003B567B /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +112,15 @@
 				6BE2CB0817336188003B567B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BE2CB1817336198003B567B /* DBKVOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				6BE2CB19173361AE003B567B /* DBKVOBlock.h */,
+				6BE2CB1A173361AE003B567B /* DBKVOBlock.m */,
+			);
+			name = DBKVOBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +193,7 @@
 				6BE2CAFF17336188003B567B /* main.m in Sources */,
 				6BE2CB0317336188003B567B /* AppDelegate.m in Sources */,
 				6BE2CB1217336188003B567B /* ViewController.m in Sources */,
+				6BE2CB1B173361AE003B567B /* DBKVOBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
