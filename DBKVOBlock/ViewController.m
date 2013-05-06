@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) DBKVOBlock *blockManager;
+@property (nonatomic, strong) NSString *testString;
 
 @end
 
@@ -22,13 +22,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.blockManager = [[DBKVOBlock alloc] init];
-    
-    [self.blockManager observeObject:self.textField withKeyPath:@"text" withAction:^{
-        NSLog(@"self.textField.text: %@", self.textField.text);
+    [[DBKVOBlock sharedManager] observeObject:self withKeyPath:@"testString" withAction:^{
+        NSLog(@"self.textField.text: %@", self.testString);
     }];
     
-    self.textField.text = @"Test";
+    self.testString = @"123 test";
     
 }
 

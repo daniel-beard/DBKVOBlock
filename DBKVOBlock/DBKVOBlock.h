@@ -13,6 +13,9 @@
 
 @interface DBKVOBlock : NSObject
 
+/** Singleton access method */
++(instancetype) sharedManager;
+
 /** Observe a keyPath for an object with a result action
  @param object - The object that contains a keyPath that we want to observer
  @param keyPath - The keyPath of the object that contains the value we want to observer

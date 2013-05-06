@@ -7,6 +7,7 @@
 //
 
 #import "DBKVOBlock.h"
+#import "DBKVOObject.h"
 
 @interface DBKVOBlock ()
 
@@ -25,50 +26,76 @@
         -Block
  
  */
+
+/** Currently trying to change this so it's:
+ [ObjectDictionary]
+ KeyPath1:
+    [Object,
+    Block],
+    [Object,
+    Block]
+ KeyPath2:
+    [Object,
+    Block]
+ */
+
 @property (nonatomic, strong) NSMutableDictionary *objectsAndKeys;
 
 @end
 
 @implementation DBKVOBlock
 
+#pragma mark - Singleton Methods
+
++ (id)sharedManager {
+    static DBKVOBlock *sharedMyManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedMyManager = [[self alloc] init];
+    });
+    return sharedMyManager;
+}
+
 #pragma mark - Register / Unregister Observers
 
 -(void) observeObject: (id) object withKeyPath: (id) keyPath withAction: (DBKVOSimpleBlock) block {
-   
-    //The object is used as the key in the dictionary, get the KeyPath dictionary if it exists
-    NSMutableDictionary *keyPaths = [self.objectsAndKeys objectForKey:object];
+  
+    //Add a new object using the object's hash as the key
+    DBKVOObject *kvoObject = [self.objectsAndKeys objectForKey:[NSNumber numberWithInteger:[object hash]]];
     
-    if (!keyPaths) {
-        //create new keyPath dictionary
-        keyPaths = [NSMutableDictionary dictionary];
-        [self.objectsAndKeys setObject:keyPaths forKey:object];
+    if (!kvoObject) {
+        kvoObject = [[DBKVOObject alloc] init];
+        [self.objectsAndKeys setObject:kvoObject forKey:[NSNumber numberWithInteger:[object hash]]];
     }
     
-    //Check if any existing block arrays exist for this keyPath
-    NSMutableArray *blocksForKeyPath = [keyPaths objectForKey:keyPath];
-
-    if (!blocksForKeyPath) {
-        //Create the block array if it doesn't exist
-        blocksForKeyPath = [NSMutableArray array];
-        [keyPaths setObject:blocksForKeyPath forKey:keyPath];
-    }
-
-    //Add the block to the blocks array
-    [blocksForKeyPath addObject:block];
-
+    kvoObject.object = object;
+    [kvoObject addKeyPath:keyPath forBlock:block];
+    
     //Register the observer
     [object addObserver:self forKeyPath:keyPath options:0 context:NULL];
 }
 
+-(void) removeAllObservers {
+  
+    /*
+    //get all observed objects
+    NSArray *kvoObjects = [self.objectsAndKeys allValues];
+    for (DBKVOObject *kvoObject in kvoObjects) {
+        [self removeObserverForObject:kvoObject.object];
+    }
+     */
+}
+
 -(void) removeObserverForObject: (id) object {
+    /*
+    if (!object)
+        return;
     
+    self removeObserverForObject:object withKeyPath:<#(id)#>
+     */
 }
 
 -(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath {
-    
-}
-
--(void) removeAllObservers {
     
 }
 
@@ -76,18 +103,19 @@
 
 -(void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
    
-    //Get Blocks for keypath of object
-    NSMutableDictionary *keyPathsForObject = [self.objectsAndKeys objectForKey:object];
-    NSMutableArray *blocksForKeyPath;
-    if (keyPathsForObject) {
-        blocksForKeyPath = [keyPathsForObject objectForKey:keyPath];
-    }
+    //Get DBKVOObject for object
+    DBKVOObject *kvoObject = [self.objectsAndKeys objectForKey:[NSNumber numberWithInteger:[object hash]]];
     
-    for (DBKVOSimpleBlock block in blocksForKeyPath) {
+    if (!kvoObject)
+        return;
+    
+    //Get blocks for keyPath
+    NSArray *blocks = [kvoObject getBlocksForKeyPath:keyPath];
+    
+    for (DBKVOSimpleBlock block in blocks) {
         if (block)
             block();
     }
-    
 }
 
 #pragma mark - Memory Management
@@ -98,6 +126,5 @@
         _objectsAndKeys = [NSMutableDictionary dictionary];
     return _objectsAndKeys;
 }
-
 
 @end

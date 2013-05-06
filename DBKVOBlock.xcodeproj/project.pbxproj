@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B19D24E17365A1300B41B3B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B19D24D17365A1300B41B3B /* SenTestingKit.framework */; };
+		2B19D24F17365A1300B41B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE2CAF217336187003B567B /* UIKit.framework */; };
+		2B19D25017365A1300B41B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE2CAF417336187003B567B /* Foundation.framework */; };
+		2B19D25617365A1300B41B3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B19D25417365A1300B41B3B /* InfoPlist.strings */; };
+		2B19D25917365A1300B41B3B /* DBKVOBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D25817365A1300B41B3B /* DBKVOBlockTests.m */; };
+		2B19D26017365A3300B41B3B /* DBDummyTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D25F17365A3300B41B3B /* DBDummyTestClass.m */; };
+		2B19D26117366D9F00B41B3B /* DBKVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE2CB1A173361AE003B567B /* DBKVOBlock.m */; };
+		2B19D26217366E8A00B41B3B /* DBDummyTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D25F17365A3300B41B3B /* DBDummyTestClass.m */; };
+		2B312DC21737772800C33CE5 /* DBKVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B312DC11737772800C33CE5 /* DBKVOObject.m */; };
 		6BE2CAF317336187003B567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE2CAF217336187003B567B /* UIKit.framework */; };
 		6BE2CAF517336187003B567B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE2CAF417336187003B567B /* Foundation.framework */; };
 		6BE2CAF717336187003B567B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE2CAF617336187003B567B /* CoreGraphics.framework */; };
@@ -23,6 +32,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B19D24C17365A1300B41B3B /* DBKVOBlockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKVOBlockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B19D24D17365A1300B41B3B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B19D25317365A1300B41B3B /* DBKVOBlockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBKVOBlockTests-Info.plist"; sourceTree = "<group>"; };
+		2B19D25517365A1300B41B3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B19D25817365A1300B41B3B /* DBKVOBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlockTests.m; sourceTree = "<group>"; };
+		2B19D25A17365A1300B41B3B /* DBKVOBlockTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBKVOBlockTests-Prefix.pch"; sourceTree = "<group>"; };
+		2B19D25E17365A3300B41B3B /* DBDummyTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDummyTestClass.h; sourceTree = "<group>"; };
+		2B19D25F17365A3300B41B3B /* DBDummyTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDummyTestClass.m; sourceTree = "<group>"; };
+		2B312DC01737772800C33CE5 /* DBKVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOObject.h; sourceTree = "<group>"; };
+		2B312DC11737772800C33CE5 /* DBKVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOObject.m; sourceTree = "<group>"; };
 		6BE2CAEF17336187003B567B /* DBKVOBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKVOBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE2CAF217336187003B567B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6BE2CAF417336187003B567B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +64,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B19D24817365A1300B41B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B19D24E17365A1300B41B3B /* SenTestingKit.framework in Frameworks */,
+				2B19D24F17365A1300B41B3B /* UIKit.framework in Frameworks */,
+				2B19D25017365A1300B41B3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BE2CAEC17336187003B567B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,10 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B19D25117365A1300B41B3B /* DBKVOBlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B19D25817365A1300B41B3B /* DBKVOBlockTests.m */,
+				2B19D25E17365A3300B41B3B /* DBDummyTestClass.h */,
+				2B19D25F17365A3300B41B3B /* DBDummyTestClass.m */,
+				2B19D25217365A1300B41B3B /* Supporting Files */,
+			);
+			path = DBKVOBlockTests;
+			sourceTree = "<group>";
+		};
+		2B19D25217365A1300B41B3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B19D25317365A1300B41B3B /* DBKVOBlockTests-Info.plist */,
+				2B19D25417365A1300B41B3B /* InfoPlist.strings */,
+				2B19D25A17365A1300B41B3B /* DBKVOBlockTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6BE2CAE617336187003B567B = {
 			isa = PBXGroup;
 			children = (
 				6BE2CAF817336187003B567B /* DBKVOBlock */,
+				2B19D25117365A1300B41B3B /* DBKVOBlockTests */,
 				6BE2CAF117336187003B567B /* Frameworks */,
 				6BE2CAF017336187003B567B /* Products */,
 			);
@@ -71,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				6BE2CAEF17336187003B567B /* DBKVOBlock.app */,
+				2B19D24C17365A1300B41B3B /* DBKVOBlockTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +133,7 @@
 				6BE2CAF217336187003B567B /* UIKit.framework */,
 				6BE2CAF417336187003B567B /* Foundation.framework */,
 				6BE2CAF617336187003B567B /* CoreGraphics.framework */,
+				2B19D24D17365A1300B41B3B /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +172,8 @@
 			children = (
 				6BE2CB19173361AE003B567B /* DBKVOBlock.h */,
 				6BE2CB1A173361AE003B567B /* DBKVOBlock.m */,
+				2B312DC01737772800C33CE5 /* DBKVOObject.h */,
+				2B312DC11737772800C33CE5 /* DBKVOObject.m */,
 			);
 			name = DBKVOBlock;
 			sourceTree = "<group>";
@@ -126,6 +181,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B19D24B17365A1300B41B3B /* DBKVOBlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B19D25D17365A1300B41B3B /* Build configuration list for PBXNativeTarget "DBKVOBlockTests" */;
+			buildPhases = (
+				2B19D24717365A1300B41B3B /* Sources */,
+				2B19D24817365A1300B41B3B /* Frameworks */,
+				2B19D24917365A1300B41B3B /* Resources */,
+				2B19D24A17365A1300B41B3B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBKVOBlockTests;
+			productName = DBKVOBlockTests;
+			productReference = 2B19D24C17365A1300B41B3B /* DBKVOBlockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		6BE2CAEE17336187003B567B /* DBKVOBlock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BE2CB1517336188003B567B /* Build configuration list for PBXNativeTarget "DBKVOBlock" */;
@@ -165,11 +238,20 @@
 			projectRoot = "";
 			targets = (
 				6BE2CAEE17336187003B567B /* DBKVOBlock */,
+				2B19D24B17365A1300B41B3B /* DBKVOBlockTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B19D24917365A1300B41B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B19D25617365A1300B41B3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BE2CAED17336187003B567B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,7 +267,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B19D24A17365A1300B41B3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2B19D24717365A1300B41B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B19D25917365A1300B41B3B /* DBKVOBlockTests.m in Sources */,
+				2B19D26017365A3300B41B3B /* DBDummyTestClass.m in Sources */,
+				2B19D26117366D9F00B41B3B /* DBKVOBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BE2CAEB17336187003B567B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,12 +302,22 @@
 				6BE2CB0317336188003B567B /* AppDelegate.m in Sources */,
 				6BE2CB1217336188003B567B /* ViewController.m in Sources */,
 				6BE2CB1B173361AE003B567B /* DBKVOBlock.m in Sources */,
+				2B19D26217366E8A00B41B3B /* DBDummyTestClass.m in Sources */,
+				2B312DC21737772800C33CE5 /* DBKVOObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2B19D25417365A1300B41B3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B19D25517365A1300B41B3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		6BE2CAFB17336188003B567B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -227,6 +345,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2B19D25B17365A1300B41B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlockTests/DBKVOBlockTests-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlockTests/DBKVOBlockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2B19D25C17365A1300B41B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlockTests/DBKVOBlockTests-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlockTests/DBKVOBlockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		6BE2CB1317336188003B567B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,6 +458,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B19D25D17365A1300B41B3B /* Build configuration list for PBXNativeTarget "DBKVOBlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B19D25B17365A1300B41B3B /* Debug */,
+				2B19D25C17365A1300B41B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6BE2CAEA17336187003B567B /* Build configuration list for PBXProject "DBKVOBlock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -326,6 +483,7 @@
 				6BE2CB1717336188003B567B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

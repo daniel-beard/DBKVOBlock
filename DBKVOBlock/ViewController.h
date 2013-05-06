@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DBKVOBlock.h"
+#import "DBDummyTestClass.h"
 
 @interface ViewController : UIViewController
 
