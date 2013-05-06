@@ -25,3 +25,5 @@ test-reports/*
 Frank/frankified_build/*
 
 *.xcuserstate
+
+*.xcuserstate

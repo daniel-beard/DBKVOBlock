@@ -132,4 +132,19 @@
     
 }
 
+/** Test the category method for adding an observer */
+-(void) testCategoryMethodForAddingObserver {
+    
+    DBKVODummyClass *dummyClass = [[DBKVODummyClass alloc] init];
+    __block NSString *result = @"";
+    [dummyClass observeKeyPath:@"testString" withAction:^{
+        result = dummyClass.testString;
+    }];
+    
+    dummyClass.testString = @"test";
+    STAssertTrue([result isEqualToString:@"test"], @"Result should equal \"test\"");
+}
+
+#warning add other category method tests
+
 @end
