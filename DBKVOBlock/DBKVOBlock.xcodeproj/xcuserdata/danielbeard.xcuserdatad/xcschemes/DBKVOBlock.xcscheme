@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6BE2CAEE17336187003B567B"
+               BlueprintIdentifier = "2BF9EB5917378F5200831F25"
                BuildableName = "DBKVOBlock.app"
                BlueprintName = "DBKVOBlock"
                ReferencedContainer = "container:DBKVOBlock.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2B19D24B17365A1300B41B3B"
+               BlueprintIdentifier = "2BF9EB8217378F5200831F25"
                BuildableName = "DBKVOBlockTests.octest"
                BlueprintName = "DBKVOBlockTests"
                ReferencedContainer = "container:DBKVOBlock.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BE2CAEE17336187003B567B"
+            BlueprintIdentifier = "2BF9EB5917378F5200831F25"
             BuildableName = "DBKVOBlock.app"
             BlueprintName = "DBKVOBlock"
             ReferencedContainer = "container:DBKVOBlock.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BE2CAEE17336187003B567B"
+            BlueprintIdentifier = "2BF9EB5917378F5200831F25"
             BuildableName = "DBKVOBlock.app"
             BlueprintName = "DBKVOBlock"
             ReferencedContainer = "container:DBKVOBlock.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BE2CAEE17336187003B567B"
+            BlueprintIdentifier = "2BF9EB5917378F5200831F25"
             BuildableName = "DBKVOBlock.app"
             BlueprintName = "DBKVOBlock"
             ReferencedContainer = "container:DBKVOBlock.xcodeproj">

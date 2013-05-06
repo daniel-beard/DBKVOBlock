@@ -11,6 +11,10 @@
 /** Typedef of the block we are using for performing actions */
  typedef void(^DBKVOSimpleBlock)();
 
+/** This class enables the use of blocks when using Key-Value Observing instead of the normal
+ cumbersome interface.
+ It also provides some helper methods for registering and unregistering observers.
+ */
 @interface DBKVOBlock : NSObject
 
 /** Singleton access method */

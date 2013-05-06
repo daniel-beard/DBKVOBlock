@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BF9EB5E17378F5200831F25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5D17378F5200831F25 /* UIKit.framework */; };
+		2BF9EB6017378F5200831F25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5F17378F5200831F25 /* Foundation.framework */; };
+		2BF9EB6217378F5200831F25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB6117378F5200831F25 /* CoreGraphics.framework */; };
+		2BF9EB6817378F5200831F25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB6617378F5200831F25 /* InfoPlist.strings */; };
+		2BF9EB6A17378F5200831F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB6917378F5200831F25 /* main.m */; };
+		2BF9EB6E17378F5200831F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB6D17378F5200831F25 /* AppDelegate.m */; };
+		2BF9EB7017378F5200831F25 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB6F17378F5200831F25 /* Default.png */; };
+		2BF9EB7217378F5200831F25 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB7117378F5200831F25 /* Default@2x.png */; };
+		2BF9EB7417378F5200831F25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB7317378F5200831F25 /* Default-568h@2x.png */; };
+		2BF9EB7717378F5200831F25 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB7517378F5200831F25 /* MainStoryboard_iPhone.storyboard */; };
+		2BF9EB7A17378F5200831F25 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB7817378F5200831F25 /* MainStoryboard_iPad.storyboard */; };
+		2BF9EB7D17378F5200831F25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB7C17378F5200831F25 /* ViewController.m */; };
+		2BF9EB8517378F5200831F25 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB8417378F5200831F25 /* SenTestingKit.framework */; };
+		2BF9EB8617378F5200831F25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5D17378F5200831F25 /* UIKit.framework */; };
+		2BF9EB8717378F5200831F25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5F17378F5200831F25 /* Foundation.framework */; };
+		2BF9EB8F17378F5200831F25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9EB8D17378F5200831F25 /* InfoPlist.strings */; };
+		2BF9EB9217378F5200831F25 /* DBKVOBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */; };
+		2BF9EBA017378F8A00831F25 /* DBKVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */; };
+		2BF9EBA117378F8A00831F25 /* DBKVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF9EB8817378F5200831F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF9EB5217378F5200831F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF9EB5917378F5200831F25;
+			remoteInfo = DBKVOBlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BF9EB5A17378F5200831F25 /* DBKVOBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKVOBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9EB5D17378F5200831F25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BF9EB5F17378F5200831F25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BF9EB6117378F5200831F25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BF9EB6517378F5200831F25 /* DBKVOBlock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBKVOBlock-Info.plist"; sourceTree = "<group>"; };
+		2BF9EB6717378F5200831F25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BF9EB6917378F5200831F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BF9EB6B17378F5200831F25 /* DBKVOBlock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBKVOBlock-Prefix.pch"; sourceTree = "<group>"; };
+		2BF9EB6C17378F5200831F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BF9EB6D17378F5200831F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BF9EB6F17378F5200831F25 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2BF9EB7117378F5200831F25 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2BF9EB7317378F5200831F25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2BF9EB7617378F5200831F25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2BF9EB7917378F5200831F25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2BF9EB7B17378F5200831F25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BF9EB7C17378F5200831F25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BF9EB8317378F5200831F25 /* DBKVOBlockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBKVOBlockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9EB8417378F5200831F25 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2BF9EB8C17378F5200831F25 /* DBKVOBlockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBKVOBlockTests-Info.plist"; sourceTree = "<group>"; };
+		2BF9EB8E17378F5200831F25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BF9EB9017378F5200831F25 /* DBKVOBlockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBKVOBlockTests.h; sourceTree = "<group>"; };
+		2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlockTests.m; sourceTree = "<group>"; };
+		2BF9EB9C17378F8A00831F25 /* DBKVOBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOBlock.h; sourceTree = "<group>"; };
+		2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlock.m; sourceTree = "<group>"; };
+		2BF9EB9E17378F8A00831F25 /* DBKVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOObject.h; sourceTree = "<group>"; };
+		2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF9EB5717378F5200831F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB5E17378F5200831F25 /* UIKit.framework in Frameworks */,
+				2BF9EB6017378F5200831F25 /* Foundation.framework in Frameworks */,
+				2BF9EB6217378F5200831F25 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9EB7F17378F5200831F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB8517378F5200831F25 /* SenTestingKit.framework in Frameworks */,
+				2BF9EB8617378F5200831F25 /* UIKit.framework in Frameworks */,
+				2BF9EB8717378F5200831F25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF9EB5117378F5200831F25 = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB6317378F5200831F25 /* DBKVOBlock */,
+				2BF9EB8A17378F5200831F25 /* DBKVOBlockTests */,
+				2BF9EB5C17378F5200831F25 /* Frameworks */,
+				2BF9EB5B17378F5200831F25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF9EB5B17378F5200831F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB5A17378F5200831F25 /* DBKVOBlock.app */,
+				2BF9EB8317378F5200831F25 /* DBKVOBlockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF9EB5C17378F5200831F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB5D17378F5200831F25 /* UIKit.framework */,
+				2BF9EB5F17378F5200831F25 /* Foundation.framework */,
+				2BF9EB6117378F5200831F25 /* CoreGraphics.framework */,
+				2BF9EB8417378F5200831F25 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BF9EB6317378F5200831F25 /* DBKVOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB9B17378F6700831F25 /* DBKVOBlock */,
+				2BF9EB6C17378F5200831F25 /* AppDelegate.h */,
+				2BF9EB6D17378F5200831F25 /* AppDelegate.m */,
+				2BF9EB7517378F5200831F25 /* MainStoryboard_iPhone.storyboard */,
+				2BF9EB7817378F5200831F25 /* MainStoryboard_iPad.storyboard */,
+				2BF9EB7B17378F5200831F25 /* ViewController.h */,
+				2BF9EB7C17378F5200831F25 /* ViewController.m */,
+				2BF9EB6417378F5200831F25 /* Supporting Files */,
+			);
+			path = DBKVOBlock;
+			sourceTree = "<group>";
+		};
+		2BF9EB6417378F5200831F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB6517378F5200831F25 /* DBKVOBlock-Info.plist */,
+				2BF9EB6617378F5200831F25 /* InfoPlist.strings */,
+				2BF9EB6917378F5200831F25 /* main.m */,
+				2BF9EB6B17378F5200831F25 /* DBKVOBlock-Prefix.pch */,
+				2BF9EB6F17378F5200831F25 /* Default.png */,
+				2BF9EB7117378F5200831F25 /* Default@2x.png */,
+				2BF9EB7317378F5200831F25 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF9EB8A17378F5200831F25 /* DBKVOBlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB9017378F5200831F25 /* DBKVOBlockTests.h */,
+				2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */,
+				2BF9EB8B17378F5200831F25 /* Supporting Files */,
+			);
+			path = DBKVOBlockTests;
+			sourceTree = "<group>";
+		};
+		2BF9EB8B17378F5200831F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB8C17378F5200831F25 /* DBKVOBlockTests-Info.plist */,
+				2BF9EB8D17378F5200831F25 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BF9EB9B17378F6700831F25 /* DBKVOBlock */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9EB9C17378F8A00831F25 /* DBKVOBlock.h */,
+				2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */,
+				2BF9EB9E17378F8A00831F25 /* DBKVOObject.h */,
+				2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */,
+			);
+			name = DBKVOBlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF9EB5917378F5200831F25 /* DBKVOBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9EB9517378F5200831F25 /* Build configuration list for PBXNativeTarget "DBKVOBlock" */;
+			buildPhases = (
+				2BF9EB5617378F5200831F25 /* Sources */,
+				2BF9EB5717378F5200831F25 /* Frameworks */,
+				2BF9EB5817378F5200831F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBKVOBlock;
+			productName = DBKVOBlock;
+			productReference = 2BF9EB5A17378F5200831F25 /* DBKVOBlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF9EB8217378F5200831F25 /* DBKVOBlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9EB9817378F5200831F25 /* Build configuration list for PBXNativeTarget "DBKVOBlockTests" */;
+			buildPhases = (
+				2BF9EB7E17378F5200831F25 /* Sources */,
+				2BF9EB7F17378F5200831F25 /* Frameworks */,
+				2BF9EB8017378F5200831F25 /* Resources */,
+				2BF9EB8117378F5200831F25 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9EB8917378F5200831F25 /* PBXTargetDependency */,
+			);
+			name = DBKVOBlockTests;
+			productName = DBKVOBlockTests;
+			productReference = 2BF9EB8317378F5200831F25 /* DBKVOBlockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF9EB5217378F5200831F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Daniel Beard";
+			};
+			buildConfigurationList = 2BF9EB5517378F5200831F25 /* Build configuration list for PBXProject "DBKVOBlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BF9EB5117378F5200831F25;
+			productRefGroup = 2BF9EB5B17378F5200831F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF9EB5917378F5200831F25 /* DBKVOBlock */,
+				2BF9EB8217378F5200831F25 /* DBKVOBlockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF9EB5817378F5200831F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB6817378F5200831F25 /* InfoPlist.strings in Resources */,
+				2BF9EB7017378F5200831F25 /* Default.png in Resources */,
+				2BF9EB7217378F5200831F25 /* Default@2x.png in Resources */,
+				2BF9EB7417378F5200831F25 /* Default-568h@2x.png in Resources */,
+				2BF9EB7717378F5200831F25 /* MainStoryboard_iPhone.storyboard in Resources */,
+				2BF9EB7A17378F5200831F25 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9EB8017378F5200831F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB8F17378F5200831F25 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF9EB8117378F5200831F25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF9EB5617378F5200831F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB6A17378F5200831F25 /* main.m in Sources */,
+				2BF9EB6E17378F5200831F25 /* AppDelegate.m in Sources */,
+				2BF9EB7D17378F5200831F25 /* ViewController.m in Sources */,
+				2BF9EBA017378F8A00831F25 /* DBKVOBlock.m in Sources */,
+				2BF9EBA117378F8A00831F25 /* DBKVOObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9EB7E17378F5200831F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9EB9217378F5200831F25 /* DBKVOBlockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF9EB8917378F5200831F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF9EB5917378F5200831F25 /* DBKVOBlock */;
+			targetProxy = 2BF9EB8817378F5200831F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BF9EB6617378F5200831F25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9EB6717378F5200831F25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BF9EB7517378F5200831F25 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9EB7617378F5200831F25 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF9EB7817378F5200831F25 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9EB7917378F5200831F25 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF9EB8D17378F5200831F25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF9EB8E17378F5200831F25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BF9EB9317378F5200831F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF9EB9417378F5200831F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF9EB9617378F5200831F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlock/DBKVOBlock-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlock/DBKVOBlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BF9EB9717378F5200831F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlock/DBKVOBlock-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlock/DBKVOBlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2BF9EB9917378F5200831F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBKVOBlock.app/DBKVOBlock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlock/DBKVOBlock-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlockTests/DBKVOBlockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2BF9EB9A17378F5200831F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBKVOBlock.app/DBKVOBlock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBKVOBlock/DBKVOBlock-Prefix.pch";
+				INFOPLIST_FILE = "DBKVOBlockTests/DBKVOBlockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF9EB5517378F5200831F25 /* Build configuration list for PBXProject "DBKVOBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9EB9317378F5200831F25 /* Debug */,
+				2BF9EB9417378F5200831F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9EB9517378F5200831F25 /* Build configuration list for PBXNativeTarget "DBKVOBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9EB9617378F5200831F25 /* Debug */,
+				2BF9EB9717378F5200831F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BF9EB9817378F5200831F25 /* Build configuration list for PBXNativeTarget "DBKVOBlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9EB9917378F5200831F25 /* Debug */,
+				2BF9EB9A17378F5200831F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF9EB5217378F5200831F25 /* Project object */;
+}

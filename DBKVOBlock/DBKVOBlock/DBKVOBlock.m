@@ -11,34 +11,9 @@
 
 @interface DBKVOBlock ()
 
-/** This dictionary stores the keys with the objects that are being observed 
- 
- The format is: 
- 
- Object 1
-    - KeyPath1
-        -Block
-    - KeyPath2
-        -Block
-        -Block
- Object 2
-    - KeyPath1
-        -Block
- 
+/** This dictionary stores the observed objects in a custom DBKVOObject that stores
+ the object itself, an array of keyPaths and an array of blocks.
  */
-
-/** Currently trying to change this so it's:
- [ObjectDictionary]
- KeyPath1:
-    [Object,
-    Block],
-    [Object,
-    Block]
- KeyPath2:
-    [Object,
-    Block]
- */
-
 @property (nonatomic, strong) NSMutableDictionary *objectsAndKeys;
 
 @end
@@ -77,26 +52,35 @@
 
 -(void) removeAllObservers {
   
-    /*
     //get all observed objects
     NSArray *kvoObjects = [self.objectsAndKeys allValues];
     for (DBKVOObject *kvoObject in kvoObjects) {
+        //pass up to next method
         [self removeObserverForObject:kvoObject.object];
     }
-     */
 }
 
 -(void) removeObserverForObject: (id) object {
-    /*
+
     if (!object)
         return;
     
-    self removeObserverForObject:object withKeyPath:<#(id)#>
-     */
+    //get kvoObject for object
+    DBKVOObject *kvoObject = [self.objectsAndKeys objectForKey:[NSNumber numberWithInteger:[object hash]]];
+    
+    if (!kvoObject)
+        return;
+    
+    //remove all keypaths
+    for (NSString *keyPath in kvoObject.keyPaths) {
+        //pass up to next method
+        [self removeObserverForObject:object withKeyPath:keyPath];
+    }
 }
 
 -(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath {
-    
+    //stop observing the object
+    [self removeObserver:object forKeyPath:keyPath];
 }
 
 #pragma mark - Implemented KVO Method
