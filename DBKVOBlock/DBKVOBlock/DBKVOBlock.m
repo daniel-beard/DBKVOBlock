@@ -39,11 +39,10 @@
     DBKVOObject *kvoObject = [self.objectsAndKeys objectForKey:[NSNumber numberWithInteger:[object hash]]];
     
     if (!kvoObject) {
-        kvoObject = [[DBKVOObject alloc] init];
+        kvoObject = [[DBKVOObject alloc] initWithObject:object];
         [self.objectsAndKeys setObject:kvoObject forKey:[NSNumber numberWithInteger:[object hash]]];
     }
     
-    kvoObject.object = object;
     [kvoObject addKeyPath:keyPath forBlock:block];
     
     //Register the observer
@@ -80,9 +79,26 @@
 }
 
 -(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath {
+    
+    if (!object)
+        return;
+    
     //stop observing the object
-    if (object)
-        [self removeObserver:object forKeyPath:keyPath];
+    [object removeObserver:self forKeyPath:keyPath];
+   
+    //we only remove the full object when no other keyPaths or blocks remain registered
+    DBKVOObject *kvoObject = [self.objectsAndKeys objectForKey:[NSNumber numberWithInteger:[object hash]]];
+    for (int i=0; i<kvoObject.keyPaths.count; i++) {
+        
+        if ([keyPath isEqualToString:kvoObject.keyPaths[i]]) {
+            //remove the keyPath and the block
+            [kvoObject.keyPaths removeObjectAtIndex:i];
+            [kvoObject.blocks removeObjectAtIndex:i];
+        }
+    }
+    
+    if (kvoObject.keyPaths.count == 0)
+        [self.objectsAndKeys removeObjectForKey:[NSNumber numberWithInteger:[object hash]]];
 }
 
 #pragma mark - Implemented KVO Method
