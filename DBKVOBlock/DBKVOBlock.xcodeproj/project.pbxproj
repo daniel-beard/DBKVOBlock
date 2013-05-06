@@ -26,6 +26,7 @@
 		2BF9EB9217378F5200831F25 /* DBKVOBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */; };
 		2BF9EBA017378F8A00831F25 /* DBKVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */; };
 		2BF9EBA117378F8A00831F25 /* DBKVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */; };
+		2BF9EBA41737900A00831F25 /* DBKVODummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9EBA31737900A00831F25 /* DBKVODummyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +61,13 @@
 		2BF9EB8417378F5200831F25 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2BF9EB8C17378F5200831F25 /* DBKVOBlockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBKVOBlockTests-Info.plist"; sourceTree = "<group>"; };
 		2BF9EB8E17378F5200831F25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2BF9EB9017378F5200831F25 /* DBKVOBlockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBKVOBlockTests.h; sourceTree = "<group>"; };
 		2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlockTests.m; sourceTree = "<group>"; };
 		2BF9EB9C17378F8A00831F25 /* DBKVOBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOBlock.h; sourceTree = "<group>"; };
 		2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOBlock.m; sourceTree = "<group>"; };
 		2BF9EB9E17378F8A00831F25 /* DBKVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVOObject.h; sourceTree = "<group>"; };
 		2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVOObject.m; sourceTree = "<group>"; };
+		2BF9EBA21737900A00831F25 /* DBKVODummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBKVODummyClass.h; sourceTree = "<group>"; };
+		2BF9EBA31737900A00831F25 /* DBKVODummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBKVODummyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +156,10 @@
 		2BF9EB8A17378F5200831F25 /* DBKVOBlockTests */ = {
 			isa = PBXGroup;
 			children = (
-				2BF9EB9017378F5200831F25 /* DBKVOBlockTests.h */,
 				2BF9EB9117378F5200831F25 /* DBKVOBlockTests.m */,
 				2BF9EB8B17378F5200831F25 /* Supporting Files */,
+				2BF9EBA21737900A00831F25 /* DBKVODummyClass.h */,
+				2BF9EBA31737900A00831F25 /* DBKVODummyClass.m */,
 			);
 			path = DBKVOBlockTests;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BF9EB9217378F5200831F25 /* DBKVOBlockTests.m in Sources */,
+				2BF9EBA41737900A00831F25 /* DBKVODummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,13 +74,15 @@
     //remove all keypaths
     for (NSString *keyPath in kvoObject.keyPaths) {
         //pass up to next method
-        [self removeObserverForObject:object withKeyPath:keyPath];
+        if (kvoObject.object)
+            [self removeObserverForObject:kvoObject.object withKeyPath:keyPath];
     }
 }
 
 -(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath {
     //stop observing the object
-    [self removeObserver:object forKeyPath:keyPath];
+    if (object)
+        [self removeObserver:object forKeyPath:keyPath];
 }
 
 #pragma mark - Implemented KVO Method
