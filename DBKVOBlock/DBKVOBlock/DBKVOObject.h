@@ -24,6 +24,8 @@
 
 /// @section Helper Methods
 
+-(instancetype) initWithObject: (id) object;
+
 /** Helper method to add a keyPath and a block to an existing DBKVOObject
  keyPath - The keyPath that we are observing
  block - The block to execute
@@ -34,5 +36,20 @@
  keyPath - An NSString representing the keyPath that we are observing on the object
  */
 -(NSMutableArray*) getBlocksForKeyPath: (NSString*) keyPath;
+
+@end
+
+
+/** This is an experimental class that should call a block on deallocation */
+@interface DBDeallocBlock : NSObject
+
+-(id) initWithBlock: (DBKVOSimpleBlock) block;
+@property (nonatomic, copy) DBKVOSimpleBlock block;
+
+@end
+
+@interface NSObject (DBDeallocExtension)
+
+-(void) addDeallocBlock: (DBKVOSimpleBlock) block;
 
 @end

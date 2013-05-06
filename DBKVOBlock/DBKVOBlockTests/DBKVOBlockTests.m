@@ -92,4 +92,59 @@
     STAssertTrue(result == NO, @"Result should be NO");
 }
 
+/** Test auto-unregister of deallocated objects */
+-(void) testAutoUnregisterOfDeallocatedObjects {
+    
+    DBKVODummyClass *dummyClass = [[DBKVODummyClass alloc] init];
+    __block BOOL result = NO;
+    [[DBKVOBlock sharedManager] observeObject:dummyClass withKeyPath:@"testString" withAction:^{
+        result = YES;
+    }];
+    
+    dummyClass = nil;
+    dummyClass.testString = @"Test string";
+    STAssertTrue(result == NO, @"Result should be NO");
+}
+
+/** Test isolation of `removeObserverForObject:withKeyPath:` method for same keyPath */
+-(void) testIsolationOfRemoveObserverForObjectWithSameKeyPath {
+    
+    DBKVODummyClass *dummyClass1 = [[DBKVODummyClass alloc] init];
+    DBKVODummyClass *dummyClass2 = [[DBKVODummyClass alloc] init];
+    
+    __block BOOL result1 = NO;
+    [[DBKVOBlock sharedManager] observeObject:dummyClass1 withKeyPath:@"testString" withAction:^{
+        result1 = YES;
+    }];
+    
+    __block BOOL result2 = NO;
+    [[DBKVOBlock sharedManager] observeObject:dummyClass2 withKeyPath:@"testString" withAction:^{
+        result2 = YES;
+    }];
+    
+    [[DBKVOBlock sharedManager] removeObserverForObject:dummyClass1 withKeyPath:@"testString"];
+    
+    dummyClass1.testString = @"teststring1";
+    dummyClass2.testString = @"testString2";
+    
+    STAssertTrue(result1 == NO, @"Result should be NO");
+    STAssertTrue(result2 == YES, @"Result should be YES");
+    
+}
+
+/** Test the category method for adding an observer */
+-(void) testCategoryMethodForAddingObserver {
+    
+    DBKVODummyClass *dummyClass = [[DBKVODummyClass alloc] init];
+    __block NSString *result = @"";
+    [dummyClass observeKeyPath:@"testString" withAction:^{
+        result = dummyClass.testString;
+    }];
+    
+    dummyClass.testString = @"test";
+    STAssertTrue([result isEqualToString:@"test"], @"Result should equal \"test\"");
+}
+
+#warning add other category method tests
+
 @end
