@@ -6,10 +6,11 @@
 //  Copyright (c) 2013 Daniel Beard. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 /** Typedef of the block we are using for performing actions */
  typedef void(^DBKVOSimpleBlock)();
+
+#import <Foundation/Foundation.h>
+#import "NSObject+DBKVOBlock.h"
 
 /** This class enables the use of blocks when using Key-Value Observing instead of the normal
  cumbersome interface.

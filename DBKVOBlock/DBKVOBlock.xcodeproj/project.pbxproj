@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBB5BEB1737F75900E81AC2 /* NSObject+DBKVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB5BEA1737F75900E81AC2 /* NSObject+DBKVOBlock.m */; };
 		2BF9EB5E17378F5200831F25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5D17378F5200831F25 /* UIKit.framework */; };
 		2BF9EB6017378F5200831F25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB5F17378F5200831F25 /* Foundation.framework */; };
 		2BF9EB6217378F5200831F25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF9EB6117378F5200831F25 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BBB5BE91737F75900E81AC2 /* NSObject+DBKVOBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DBKVOBlock.h"; sourceTree = "<group>"; };
+		2BBB5BEA1737F75900E81AC2 /* NSObject+DBKVOBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DBKVOBlock.m"; sourceTree = "<group>"; };
 		2BF9EB5A17378F5200831F25 /* DBKVOBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBKVOBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9EB5D17378F5200831F25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BF9EB5F17378F5200831F25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +183,8 @@
 				2BF9EB9D17378F8A00831F25 /* DBKVOBlock.m */,
 				2BF9EB9E17378F8A00831F25 /* DBKVOObject.h */,
 				2BF9EB9F17378F8A00831F25 /* DBKVOObject.m */,
+				2BBB5BE91737F75900E81AC2 /* NSObject+DBKVOBlock.h */,
+				2BBB5BEA1737F75900E81AC2 /* NSObject+DBKVOBlock.m */,
 			);
 			name = DBKVOBlock;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				2BF9EB7D17378F5200831F25 /* ViewController.m in Sources */,
 				2BF9EBA017378F8A00831F25 /* DBKVOBlock.m in Sources */,
 				2BF9EBA117378F8A00831F25 /* DBKVOObject.m in Sources */,
+				2BBB5BEB1737F75900E81AC2 /* NSObject+DBKVOBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +497,7 @@
 				2BF9EB9717378F5200831F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BF9EB9817378F5200831F25 /* Build configuration list for PBXNativeTarget "DBKVOBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +506,7 @@
 				2BF9EB9A17378F5200831F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
