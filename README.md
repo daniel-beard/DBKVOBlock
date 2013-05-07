@@ -46,3 +46,9 @@ Or you can use one of the following `sharedManager` methods:
  * `DBKVOObject.h` + `DBKVOObject.m`
  * `NSObject+DBKVOBlock.h` + `NSObject+DBKVOBlock.m`
 * Import the `DBKVOBlock.h` file in the class you want to use it. `#import "DBKVOBlock.h"` 
+
+### Licence + Notes
+
+Copyright (C) 2013 Daniel Beard http://danielbeard.wordpress.com
+ 
+Distributed under [MIT License](http://opensource.org/licenses/mit-license.php)
