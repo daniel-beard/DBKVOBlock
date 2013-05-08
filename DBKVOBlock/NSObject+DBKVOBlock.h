@@ -31,17 +31,15 @@
 -(void) observeKeyPath: (id) keyPath withAction: (DBKVOSimpleBlock) block;
 
 /** Removes all keyPath observers that are registered with this object
- @param object - The object to stop observing
  */
--(void) removeObserverForObject: (id) object;
+-(void) removeBlockObserver;
 
-/** Removes KVO for a specific keyPath for a given object
- @param object - The object that we are targeting
+/** Removes KVO for a specific keyPath for this object
  @param keyPath - The keyPath to stop observing for this object
  */
--(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath;
+-(void) removeBlockObserverForKeyPath: (id) keyPath;
 
 /** Stop KVO for all registered observers */
--(void) removeAllObservers;
+-(void) removeAllBlockObservers;
 
 @end

@@ -30,15 +30,15 @@
     [[DBKVOBlock sharedManager] observeObject:self withKeyPath:keyPath withAction:block];
 }
 
--(void) removeObserverForObject: (id) object {
-    [[DBKVOBlock sharedManager] removeObserverForObject:object];
+-(void) removeBlockObserver {
+    [[DBKVOBlock sharedManager] removeObserverForObject:self];
 }
 
--(void) removeObserverForObject: (id) object withKeyPath: (id) keyPath {
-    [[DBKVOBlock sharedManager] removeObserverForObject:object withKeyPath:keyPath];
+-(void) removeBlockObserverForKeyPath: (id) keyPath {
+    [[DBKVOBlock sharedManager] removeObserverForObject:self withKeyPath:keyPath];
 }
 
--(void) removeAllObservers {
+-(void) removeAllBlockObservers {
     [[DBKVOBlock sharedManager] removeAllObservers];
 }
 

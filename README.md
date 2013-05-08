@@ -10,7 +10,7 @@ DBKVOBlock
 
 There are several ways that you can use the class, the first is using the `sharedManager`:
 
-    id objectToObserve; // assum initialized
+    id objectToObserve; // assume initialized
     [[DBKVOBlock sharedManager] observeObject: objectToObserve withKeyPath: @"textValue" withAction:^{
         NSLog(@"Textvalue changed!");
     }];
