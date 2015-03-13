@@ -2,6 +2,8 @@ DBKVOBlock
 ==========
 [![Build Status](https://travis-ci.org/daniel-beard/DBKVOBlock.png?branch=master)](https://travis-ci.org/daniel-beard/DBKVOBlock)
 
+Note: This code was experimental at best, use this as a learning experience, but PLEASE do not use this in production.
+
 * DBKVOBlock is an attempt to simplify the use of Key Value Observing by using blocks instead of the clunky built in way.
 * DBKVOBlock also automatically unregisters KVO notifications for objects that are deallocated.
 * You can set multiple actions for a single keyPath.
